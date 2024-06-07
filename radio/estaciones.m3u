@@ -9,6 +9,15 @@ https://ais-sa3.cdnstream1.com/2695_64.aac
 #EXTINF:Noize Nación
 https://stream.streamaudio.de:8000/noize-nacion-radio
 
+#EXTINF:RinseFM
+http://206.189.117.157:8000/stream
+
+#EXTINF: .977 Hits
+https://26453.live.streamtheworld.com/977_HITSAAC_SC
+
+#EXTINF:Hot Hitz
+https://pureplay.cdnstream1.com/6027_128.mp3
+
 #EXTINF:Road FM 
 https://infra.roadfm.fr/listen/road_fm/roadfm128
 
@@ -27,7 +36,12 @@ https://22113.live.streamtheworld.com/XHAWFM_SC
 #EXTINF:D99 MTY
 https://27063.live.streamtheworld.com/D99_SC
 
-#EXTINF: Radio Centro Tlaxcala
+#EXTINF:Radio Centro Tlaxcala
 https://radioenhd.com/8212/;
+
+#EXTINF:Smooth Jazz
+http://144.217.158.59:5120/stream
+
+
 
 
