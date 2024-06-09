@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>🎧 Masterk3y Radio Player</title>
   <meta charset="utf-8">
@@ -13,7 +12,7 @@
   <script src="js/parser.min.js"></script>
   
   <script>
-  
+
     var playlist;
   
     // Fetch the playlist file, using xhr for example
@@ -66,31 +65,30 @@
 </head>
 <style>
     body {
-  background-color: #F0F0E8;
+  background-color: #202020;
+  color:#E7062A;
+  
 }
-#logo {
-    display:block;
-    max-width: 300px;
-    margin: 0 auto;
-    width: 90%;
+a {
+  color:#E7062A;
 }
 </style>
 
 <body>
-    
 
     <div class="container text-center">
         
-        <div>
-        <!--<img src="img/logo.png" width="400" class="logo" style="padding-top: 10%;" alt="">-->
-        </div>
+        
         <div style="padding-top: 25%;">
         <h3>📻 <q id="radio_name">Radios</q> <a href="https://orlandohc.netlify.app"> Masterk3y</a> 💬</h3>
+        <br><br><br><br>
         <audio id="player" controls>
             <source id="radio_source" src="none">
             Your browser does not support the audio element.
         </audio>
-        <div>&nbsp;</div>
+
+        <br>
+        <br><br><br><br>
         <select id="selection" class="selectpicker show-tick" data-live-search="true">
             <option data-icon="glyphicon-flash" value="none" selected>- Seleccionar estación -</option>
             <optgroup label="LOCAL">            
@@ -107,6 +105,7 @@
         <optgroup label="Top Hits">
             <option value="https://26453.live.streamtheworld.com/977_HITSAAC_SC">🎵.977 Hits</option>
             <option value="https://pureplay.cdnstream1.com/6027_128.mp3">🎵 Hot Hitz</option>
+            <option value="https://live.powerhitz.com/hot108">🎵 Hot 108 Jamz NY</option>
             <option value="https://infra.roadfm.fr/listen/road_fm/roadfm128">🎵 RoadFM</option>
             <option value="https://live.truckers.fm/">🎵 Truckers</option>
         </optgroup>
@@ -120,8 +119,8 @@
             <option value="https://26353.live.streamtheworld.com/XEDAFM_SC">🎵 IMAGEN Saltillo</option>
         </optgroup>
         </select>
-       
+    
+       </div>
     </div>
-
 </body>
 </html>
