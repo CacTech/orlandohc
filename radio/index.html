@@ -30,6 +30,7 @@
         var options = document.getElementById("selection");
         for (var i = 0; i < playlist.length; i++){
             var option = document.createElement("option");
+            option.text = playlist[i].artist;
             option.text = playlist[i].title;
             option.value = playlist[i].file;
             option.setAttribute("data-icon", "glyphicon-music");
@@ -91,8 +92,33 @@
         </audio>
         <div>&nbsp;</div>
         <select id="selection" class="selectpicker show-tick" data-live-search="true">
-            <option data-icon="glyphicon-flash" value="none" selected>- Seleccionar estación -</option>            
-            <!--<option value="http://pub1.diforfree.org:8000/di_eurodance_hi">Eurodance</option>-->
+            <option data-icon="glyphicon-flash" value="none" selected>- Seleccionar estación -</option>
+            <optgroup label="LOCAL">            
+            <option value="https://stream-149.zeno.fm/temlrqbzt0vvv?zs=_OdXBeClQ_OykmI-d9_fnA
+            ">🎵 XENR</option>
+            <option value="https://streamingcwsradio30.com:7080/stream/1/">🎵 LikeFM</option>
+            <option value="https://ais-sa3.cdnstream1.com/2695_64.aac">🎵 La Rancherita del Aire</option>
+            <option value="https://22113.live.streamtheworld.com/XHAWFM_SC">🎵 AW 101.3 Mty</option>
+            <option value="https://radioenhd.com/8212/;">🎵 Radio Centro Apizaco</option>
+        </optgroup>
+        <optgroup label="ELECTRO">
+            <option value="https://stream.streamaudio.de:8000/noize-nacion-radio">🎵 Noize Nación</option>
+        </optgroup>
+        <optgroup label="Top Hits">
+            <option value="https://26453.live.streamtheworld.com/977_HITSAAC_SC">🎵.977 Hits</option>
+            <option value="https://pureplay.cdnstream1.com/6027_128.mp3">🎵 Hot Hitz</option>
+            <option value="https://infra.roadfm.fr/listen/road_fm/roadfm128">🎵 RoadFM</option>
+            <option value="https://live.truckers.fm/">🎵 Truckers</option>
+        </optgroup>
+        <optgroup label="Rock">
+            <option value="https://listen.181fm.com/181-buzz_128k.mp3">🎵 The Buzz</option>
+        </optgroup>
+        <optgroup label="Jazz/Clasica">
+            <option value="https://das-edge09-live365-dal03.cdnstream.com/a49349">🎵 Smooth Jazz NY</option>
+        </optgroup>
+        <optgroup label="Noticias">
+            <option value="https://26353.live.streamtheworld.com/XEDAFM_SC">🎵 IMAGEN Saltillo</option>
+        </optgroup>
         </select>
        
     </div>
