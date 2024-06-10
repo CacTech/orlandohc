@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>🎧 Masterk3y Radio Player</title>
+  <title id="radio_name2">🎧 Masterk3y Radio Player</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -51,9 +51,13 @@
         var audio = document.getElementById("player");
         var source = document.getElementById("radio_source");
         var title = document.getElementById("radio_name");
+        var title2 = document.getElementById("radio_name2");
+
+        
 
         if (sourceUrl != "none") {
             audio.pause();
+            title2.innerHTML = name
             title.innerHTML = name
             source.src = sourceUrl;
             audio.load();
