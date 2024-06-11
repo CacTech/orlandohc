@@ -66,6 +66,7 @@
   
 </head>
 <style>
+    /*
     body {
   background-color: #202020;
   color:#E7062A;
@@ -73,24 +74,42 @@
 }
 a {
   color:#E7062A;
+}*/
+
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+:root {
+  --blue: #0e0620;
+  --white: #fff;
+  --green: #A3E52B;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+ 
+  font-family: "Nunito Sans";
+  color: var(--blue);
+  font-size: 1em;
 }
 </style>
 
 <body>
 
     <div class="container text-center">
-        
-        
-        <div style="padding-top: 25%;">
+        <div>
+            <img src="img/logo.png" width="400" class="logo" style="padding-top: 10%;" alt="">
+            </div>
         <h3>📻<q id="radio_name">Radio</q> en <a href="https://orlandohc.netlify.app"> Radio Master</a></h3>
-        <br><br><br><br>
+        <div>
+            <br>
         <audio id="player" controls>
             <source id="radio_source" src="none">
             Your browser does not support the audio element.
         </audio>
-
-        <br>
-        <br><br><br><br>
+        <br><br>
         <select id="selection" class="selectpicker show-tick" data-live-search="true">
             <option data-icon="glyphicon-flash" value="none" selected>- Seleccionar estación -</option>
             <optgroup label="Local">            
