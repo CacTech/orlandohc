@@ -1,63 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Orlando Hernandez Cruz</title>
-
-	<link rel="icon" href="favicon.ico" type="image/png" />
-
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<!--<link rel="stylesheet" href="css/themes/white-indigo.css">-->
-	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
-	<link rel="stylesheet" href="css/themes/white-grey.css"> 
-	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
+  <meta charset="UTF-8">
+  <title>📻 Radio Roll HC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<main>
-		<div class="intro">Orlando Hernandez Cruz (Masterk3y)<br><p style="font-size: x-large;"></p></div>
-		<div class="tagline" style="align-items: flex-start;">🌱 Informático teórico y programador web, apasionado por la tecnología, la radioafición y todo lo que tenga que ver con explorar ideas nuevas. <br>Fuera del teclado me gusta cuidar mi jardín, perderme entre libros y dejarme sorprender por música electrónica misteriosa / desconocida. <br>
-Esposo de la Dra <a href="https://www.instagram.com/nanys92/" target="_blank">Nancy</a>, Orgulloso Papá, responsable de Desarrollo/Operaciones Web @ IMSS Coahuila y Creador de <a href="http://noizenacion.netlify.app" target="_blank"> Noize Nación Radio</a> 🌱<br> 
-			<br>
-			<br></div>
-		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-		<div class="icons-social">
-			<a target="_blank" href="https://github.com/orlandohc"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/orlando-hernandez-cruz-7ba653139/"><i class="fab fa-linkedin"></i></a>
-			<a target="_blank" href="https://www.instagram.com/orlandohc/"><i class="fab fa-instagram"></i></a>
-			<a target="_blank" href="https://wa.me/+528617989375"><i class="fab fa-whatsapp"></i></a>
-			<a target="_blank" href="https://www.pinterest.com.mx/masterk3y1337/pins/"><i class="fab fa-pinterest"></i></a>
-			<a target="_blank" href="https://soundcloud.com/orlandohc"><i class="fab fa-soundcloud"></i></a>
-			<a target="_blank" href="http://www.imdb.com/user/ur65237307/ratings?ref_=nvn_usr_rt_4"><i class="fab fa-imdb"></i></a>
-			<a target="_blank" href="https://noizenacion.netlify.app"><i class="fas fa-music"></i></a>
-			<a href="./radio"><i class="fas fa-broadcast-tower"></i></a>
-			<a target="_blank" href="https://orlandohc-masterk3y.blogspot.com/"><i class="fab fa-blogger"></i></a>
-			<a target="_blank" href="https://medium.com/@orlandohernandezcruz"><i class="fab fa-medium-m"></i></a> 
 
+<div class="container">
+  <h1>📻 Radio Roll HC</h1>
+  <h2 id="stationName">Selecciona una estación</h2>
 
+  <audio id="player" controls></audio>
 
-	</div>
-	<div class="footer">
-		<!--<script type='text/javascript'>
-			var cstrFreePlayerUid = 545974;var cstrFreePlayerTheme = 'color';var cstrFreePlayerColor = '000000';
-			</script>
-			 <script type='text/javascript' src='//corscdn.caster.fm/freeplayer/FreePlanPlayerEmbed.js'></script>
-			 <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
-			 <!--<a id='cstrFreePlayerBL1' href='//www.caster.fm/'>Free Shoutcast Hosting</a><a id='cstrFreePlayerBL2' href='//www.caster.fm/'>Radio Stream Hosting</a>
-			  <div id='cstrFreePlayerDiv'></div>-->
-		
-	  </div>
-	</main>
-	
+  <div class="buttons">
+    <button onclick="prevStation()">⏮ Anterior</button>
+    <button onclick="nextStation()">Siguiente ⏭</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+   <div class="footer">
+        <div id="ww_b9090c61e87be" v='1.3' loc='auto' a='{"t":"ticker","lang":"es","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Más previsiones: <a href="https://oneweather.org/es/seville/25_days/" id="ww_b9090c61e87be_u" target="_blank">El tiempo Sevilla</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_b9090c61e87be"></script>
+       </div>
+      </div>
 </body>
 </html>
