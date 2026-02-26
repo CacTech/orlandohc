@@ -56,16 +56,8 @@ const stations = [
     url: "https://nl.ah.fm/live"
   },
   {
-    name: "BBC 1Xtra",
-    url: "https://lstn.lv/bbc.m3u8?station=bbc_1xtra&bitrate=96000"
-  },
-  {
     name: "113.FM BPM",
     url: "https://113fm.cdnstream1.com/1736_128?cb=139271.mp3"
-  },
-  {
-    name: "EDM Sessions",
-    url: "https://s2.radio.co/s30844a0f4/listen"
   },
   {
     name: "ChillTrax",
@@ -114,10 +106,6 @@ const stations = [
   {
     name: "Smooth Jazz NY",
     url: "https://das-edge09-live365-dal03.cdnstream.com/a49349"
-  },
-  {
-    name: "McQs Jazz",
-    url: "https://stream4.rcast.net/68624"
   },
   {
     name: "IMAGEN Saltillo",
