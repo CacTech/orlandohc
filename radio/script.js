@@ -141,7 +141,7 @@ function changeStation() {
       album: "Live Radio",
       artwork: [
         {
-          src: "https://TU_DOMINIO/artwork.png",
+          src: "https://orlandohc.netlify.app/icons/web-app-manifest-512x512.png",
           sizes: "512x512",
           type: "image/png"
         }
