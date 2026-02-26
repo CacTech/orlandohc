@@ -1,7 +1,7 @@
 const stations = [
   {
     name: "XENR",
-    url: "https://stream-142.zeno.fm/temlrqbzt0vvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ0ZW1scnFienQwdnZ2IiwiaG9zdCI6InN0cmVhbS0xNDIuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Ilc3cTFIdzNiUVdLaEpNYjRHelZ1b0EiLCJpYXQiOjE3Njg0MjczOTAsImV4cCI6MTc2ODQyNzQ1MH0.Ue95nLznupFtfwtIfdWAcwahTHbYt5MA-sOa8kMqgas"
+    url: "https://stream-142.zeno.fm/temlrqbzt0vvv?zt=..."
   },
   {
     name: "LikeFM",
@@ -120,19 +120,46 @@ const stationName = document.getElementById("stationName");
 
 function changeStation() {
 
-  player.src = stations[currentIndex].url;
+  const station = stations[currentIndex];
 
-  // 👇 AQUÍ es donde se pone
+  player.src = station.url;
+
   stationName.innerText =
-    stations[currentIndex].name +
+    station.name +
     " (" + (currentIndex + 1) + "/" + stations.length + ")";
 
   player.play();
 
   localStorage.setItem("lastStation", currentIndex);
+
+  // 🔥 MEDIA SESSION API (CONTROL LOCK SCREEN)
+  if ('mediaSession' in navigator) {
+
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: station.name,
+      artist: "Radio Roll HC",
+      album: "Live Radio",
+      artwork: [
+        {
+          src: "https://TU_DOMINIO/artwork.png",
+          sizes: "512x512",
+          type: "image/png"
+        }
+      ]
+    });
+
+    navigator.mediaSession.setActionHandler('play', () => player.play());
+
+    navigator.mediaSession.setActionHandler('pause', () => player.pause());
+
+    navigator.mediaSession.setActionHandler('nexttrack', () => nextStation());
+
+    navigator.mediaSession.setActionHandler('previoustrack', () => prevStation());
+  }
 }
 
 function nextStation() {
+
   currentIndex++;
 
   if (currentIndex >= stations.length) {
@@ -143,6 +170,7 @@ function nextStation() {
 }
 
 function prevStation() {
+
   currentIndex--;
 
   if (currentIndex < 0) {
