@@ -13,11 +13,15 @@ body {
 .container {
   text-align: center;
   background: #111827;
-  padding: 50px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 16px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+/*COLOR CHIDO #111827; */
 
 
 h1 {
