@@ -191,7 +191,7 @@ window.onload = function() {
   changeStation();
 };
 
-const audio = document.getElementById('radioPlayer'); // Cambia por el ID de tu audio
+const audio = document.getElementById('player'); // Cambia por el ID de tu audio
 const canvas = document.getElementById('visualizer');
 const canvasCtx = canvas.getContext('2d');
 
