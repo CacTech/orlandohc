@@ -131,8 +131,10 @@ const player = document.getElementById("player");
 const stationName = document.getElementById("stationName");
 
 function changeStation() {
-  player.src = stations[currentIndex].url;
-  stationName.innerText = stations[currentIndex].name;
+stationName.innerText =
+    stations[currentIndex].name +
+    " (" + (currentIndex + 1) + "/" + stations.length + ")";
+
   player.play();
   localStorage.setItem("lastStation", currentIndex);
 }
