@@ -191,3 +191,14 @@ window.onload = function() {
   changeStation();
 };
 
+function refreshPage() {
+  location.reload();
+}
+
+function refreshPage() {
+
+  player.pause();
+  player.load();
+  player.play();
+
+}
