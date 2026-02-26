@@ -131,34 +131,46 @@ const player = document.getElementById("player");
 const stationName = document.getElementById("stationName");
 
 function changeStation() {
-stationName.innerText =
+
+  player.src = stations[currentIndex].url;
+
+  // 👇 AQUÍ es donde se pone
+  stationName.innerText =
     stations[currentIndex].name +
     " (" + (currentIndex + 1) + "/" + stations.length + ")";
 
   player.play();
+
   localStorage.setItem("lastStation", currentIndex);
 }
 
 function nextStation() {
   currentIndex++;
+
   if (currentIndex >= stations.length) {
     currentIndex = 0;
   }
+
   changeStation();
 }
 
 function prevStation() {
   currentIndex--;
+
   if (currentIndex < 0) {
     currentIndex = stations.length - 1;
   }
+
   changeStation();
 }
 
 window.onload = function() {
+
   const saved = localStorage.getItem("lastStation");
+
   if (saved !== null) {
     currentIndex = parseInt(saved);
   }
+
   changeStation();
 };
