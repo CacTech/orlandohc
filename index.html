@@ -60,6 +60,27 @@ Esposo de la Dra <a href="https://www.instagram.com/nanys92/" target="_blank">Na
 		
 	  </div>
 	</main>
-	
+	<audio id="bg-audio" preload="auto"></audio>
+	<script>
+		const tracks = ['audio/track1.mp3', 'audio/track2.mp3'];
+		let current = 0;
+		const audio = document.getElementById('bg-audio');
+
+		function playTrack(index) {
+			audio.src = tracks[index];
+			audio.play().catch(() => {});
+		}
+
+		audio.addEventListener('ended', () => {
+			current = (current + 1) % tracks.length;
+			playTrack(current);
+		});
+
+		// Intenta autoplay; si el navegador lo bloquea, espera primer clic
+		playTrack(current);
+		document.addEventListener('click', () => {
+			if (audio.paused) audio.play();
+		}, { once: true });
+	</script>
 </body>
 </html>
