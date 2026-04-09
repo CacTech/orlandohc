@@ -61,10 +61,18 @@ Esposo de la Dra <a href="https://www.instagram.com/nanys92/" target="_blank">Na
 	  </div>
 	</main>
 	<audio id="bg-audio" preload="auto"></audio>
+
+	<div id="play-hint">
+		<i class="fas fa-music"></i>
+		<span>Toca para escuchar</span>
+	</div>
+
 	<script>
 		const tracks = ['audio/track1.mp3', 'audio/track2.mp3'];
 		let current = 0;
 		const audio = document.getElementById('bg-audio');
+		const hint = document.getElementById('play-hint');
+		const isMobile = navigator.maxTouchPoints > 0;
 
 		function playTrack(index) {
 			audio.src = tracks[index];
@@ -76,11 +84,16 @@ Esposo de la Dra <a href="https://www.instagram.com/nanys92/" target="_blank">Na
 			playTrack(current);
 		});
 
-		// Intenta autoplay; si el navegador lo bloquea, espera primer clic
-		playTrack(current);
-		document.addEventListener('click', () => {
-			if (audio.paused) audio.play();
-		}, { once: true });
+		if (isMobile) {
+			hint.classList.add('visible');
+			document.addEventListener('click', () => {
+				playTrack(current);
+				hint.classList.add('fade-out');
+				setTimeout(() => hint.remove(), 600);
+			}, { once: true });
+		} else {
+			playTrack(current);
+		}
 	</script>
 </body>
 </html>

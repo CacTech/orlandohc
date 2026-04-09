@@ -77,3 +77,39 @@ main > .tagline {
 	color: white;
 	text-align: center;
   }
+
+/* Play hint (móvil) */
+#play-hint {
+	display: none;
+	position: fixed;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.55rem 1.25rem;
+	border-radius: 2rem;
+	background: rgba(58, 74, 60, 0.12);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border: 1px solid rgba(58, 74, 60, 0.2);
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	user-select: none;
+	animation: hint-pulse 2.5s ease-in-out infinite;
+	transition: opacity 0.5s ease;
+}
+
+#play-hint.visible {
+	display: flex;
+}
+
+#play-hint.fade-out {
+	opacity: 0;
+}
+
+@keyframes hint-pulse {
+	0%, 100% { opacity: 0.5; transform: translateX(-50%) translateY(0); }
+	50%       { opacity: 1;   transform: translateX(-50%) translateY(-4px); }
+}
