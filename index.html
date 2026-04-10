@@ -73,25 +73,38 @@ Esposo de la Dra <a href="https://www.instagram.com/nanys92/" target="_blank">Na
 		const hint = document.getElementById('play-hint');
 		const isMobile = navigator.maxTouchPoints > 0;
 
-		function playTrack(index) {
-			audio.src = tracks[index];
-			audio.play().catch(() => {});
+		const hintLabel = hint.querySelector('span');
+
+		function dismissHint() {
+			hint.classList.add('fade-out');
+			setTimeout(() => hint.remove(), 600);
 		}
 
 		audio.addEventListener('ended', () => {
 			current = (current + 1) % tracks.length;
-			playTrack(current);
+			audio.src = tracks[current];
+			audio.play();
 		});
 
 		if (isMobile) {
+			hintLabel.textContent = 'Toca para escuchar';
 			hint.classList.add('visible');
 			document.addEventListener('click', () => {
-				playTrack(current);
-				hint.classList.add('fade-out');
-				setTimeout(() => hint.remove(), 600);
+				audio.src = tracks[current];
+				audio.play();
+				dismissHint();
 			}, { once: true });
 		} else {
-			playTrack(current);
+			audio.src = tracks[current];
+			audio.play().catch(() => {
+				// Autoplay bloqueado en desktop — mostrar hint y esperar clic
+				hintLabel.textContent = 'Clic para escuchar';
+				hint.classList.add('visible');
+				document.addEventListener('click', () => {
+					audio.play();
+					dismissHint();
+				}, { once: true });
+			});
 		}
 	</script>
 </body>
