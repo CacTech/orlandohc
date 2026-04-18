@@ -64,6 +64,10 @@ const stations = [
     url: "https://streamssl.chilltrax.com/"
   },
   {
+    name: "Harrys Radio",
+    url: "http://stream.streamaudio.de:8000/harrys-radio-station"
+  },
+  {
     name: "Hot Hitz",
     url: "https://pureplay.cdnstream1.com/6027_128.mp3"
   },
