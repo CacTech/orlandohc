@@ -17,7 +17,7 @@ const stations = [
   },
   {
     name: "La Rancherita del Aire",
-    url: "https://ais-sa3.cdnstream1.com/2695_64.aac"
+    url: "https://enlinea-r1.rancherita.com.mx/listen/rancherita_del_aire/radio.mp3"
   },
   {
     name: "AW 101.3 Mty",
@@ -93,7 +93,7 @@ const stations = [
   },
   {
     name: "La Primera 88.9 Saltillo",
-    url: "https://27053.live.streamtheworld.com/XHAJFMAAC.aac"
+    url: "https://18863.live.streamtheworld.com/XEAJAMAAC.aac"
   },
   {
     name: "Reel Countri WI",
@@ -112,8 +112,8 @@ const stations = [
     url: "https://das-edge09-live365-dal03.cdnstream.com/a49349"
   },
   {
-    name: "IMAGEN Saltillo",
-    url: "https://18363.live.streamtheworld.com/XEDAFMAAC_SC"
+    name: "IMAGEN CDMX",
+    url: "https://us-b4-p-e-pb13-audio.cdn.mdstrm.com/live-audio-aw/64a44d807cb6630627ab0c82?aid=64a43cdb8d930205d958b6b5&property=tunein&DIST=TuneIn&TGT=TuneIn&maxServers=2&gdpr=0&us_privacy=1YNY&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTc3OTczNTU2NiwiaXNzIjoidGlzcnYifQ.gPXNVNImrLYR6CUsisirXYuWDkC-1yluK9C-Qd93iCM&pid=mKdwMlxzDQvcPMn0naKYY3P5LqQ2c5Jw&sid=hoW93lIDPHEXCtoMxJ3KXbRZyjMRmeSr&uid=l5yzoM6zPKh0oecoi9uE1Z9IKZLvJ8QJ&es=us-b4-p-e-pb13-audio.cdn.mdstrm.com&ote=1779821977304&ot=iGhpmBy182EdVe0EKlqkog&proto=https&pz=us&cP=128000&awCollectionId=64a43cdb8d930205d958b6b5&aw_0_1st.playerId=tunein&liveId=64a44d807cb6630627ab0c82&referer=https%3A%2F%2Ftunein.com%2F&propertyName=tunein&propertyType=rss-app&listenerId=l5yzoM6zPKh0oecoi9uE1Z9IKZLvJ8QJ"
   }
 ];
 
