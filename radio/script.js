@@ -120,20 +120,8 @@ const stations = [
     url: "https://us-b4-p-e-pb13-audio.cdn.mdstrm.com/live-audio-aw/64a44d807cb6630627ab0c82?aid=64a43cdb8d930205d958b6b5&property=tunein&DIST=TuneIn&TGT=TuneIn&maxServers=2&gdpr=0&us_privacy=1YNY&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTc3OTczNTU2NiwiaXNzIjoidGlzcnYifQ.gPXNVNImrLYR6CUsisirXYuWDkC-1yluK9C-Qd93iCM&pid=mKdwMlxzDQvcPMn0naKYY3P5LqQ2c5Jw&sid=hoW93lIDPHEXCtoMxJ3KXbRZyjMRmeSr&uid=l5yzoM6zPKh0oecoi9uE1Z9IKZLvJ8QJ&es=us-b4-p-e-pb13-audio.cdn.mdstrm.com&ote=1779821977304&ot=iGhpmBy182EdVe0EKlqkog&proto=https&pz=us&cP=128000&awCollectionId=64a43cdb8d930205d958b6b5&aw_0_1st.playerId=tunein&liveId=64a44d807cb6630627ab0c82&referer=https%3A%2F%2Ftunein.com%2F&propertyName=tunein&propertyType=rss-app&listenerId=l5yzoM6zPKh0oecoi9uE1Z9IKZLvJ8QJ"
   },
   {
-    name: "W Radio CDMX",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/XEWFMAAC.aac"
-  },
-  {
-    name: "Radio Fórmula 103.3",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/XERFRMAAC.aac"
-  },
-  {
     name: "MVS Noticias",
     url: "https://playerservices.streamtheworld.com/api/livestream-redirect/XHMVSFMAAC.aac"
-  },
-  {
-    name: "El Heraldo Radio",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/XHDL_FMAAC.aac"
   }
 ];
 
