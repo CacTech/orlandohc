@@ -32,10 +32,6 @@ const stations = [
     url: "https://hemnos.cdnstream.com/1113_96"
   },
   {
-  name: "La Raza Houston",
-  url: "https://playerservices.streamtheworld.com/api/livestream-redirect/KQQKFMAAC.aac"
-  },
-  {
     name: "Fuego 101.9",
     url: "https://17843.live.streamtheworld.com/KHHMFMAAC.aac"
   },
