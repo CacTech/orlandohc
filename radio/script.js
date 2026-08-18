@@ -118,6 +118,10 @@ const stations = [
   {
     name: "MVS Noticias",
     url: "https://playerservices.streamtheworld.com/api/livestream-redirect/XHMVSFMAAC.aac"
+  },
+    {
+    name: "Gallito XHSJ SLW",
+    url: "https://radio.rcg.com.mx:7001/stream/1/"
   }
 ];
 
