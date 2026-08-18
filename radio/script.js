@@ -4,11 +4,11 @@ const stations = [
     url: "https://stream-142.zeno.fm/temlrqbzt0vvv?zt=..."
   },
   {
-    name: "LikeFM",
+    name: "LikeFM Sabinas",
     url: "https://streamingcwsradio30.com:7080/stream/1/"
   },
   {
-    name: "Gallito XHSJ",
+    name: "Gallito XHSJ SLW",
     url: "https://radio.rcg.com.mx:7001/stream/1/"
   },
   {
@@ -22,6 +22,10 @@ const stations = [
   {
     name: "AW 101.3 Mty",
     url: "https://mdstrm.com/audio/67378ab60639b6fb47c91763/icecast.audio?property=mmradio"
+  },
+  {
+    name: "EXA Mty",
+    url: "https://18213.live.streamtheworld.com/XHRSMTYFM_SC"
   },
   {
     name: "Radio Centro Apizaco",
@@ -44,8 +48,12 @@ const stations = [
     url: "https://25633.live.streamtheworld.com/RADIO538.mp3"
   },
   {
-    name: "Urbana Play",
+    name: "Urbana Play ARG",
     url: "https://cdn.instream.audio/:9660/stream"
+  },
+  {
+    name: "Metro 95.1 ARG",
+    url: "https://24483.live.streamtheworld.com/METROAAC.aac"
   },
   {
     name: "Rinse FM",
@@ -94,10 +102,6 @@ const stations = [
   {
     name: "La Primera 88.9 Saltillo",
     url: "https://18863.live.streamtheworld.com/XEAJAMAAC.aac"
-  },
-  {
-    name: "Reel Countri WI",
-    url: "https://das-edge09-live365-dal03.cdnstream.com/a76502"
   },
   {
     name: "The Ranch",
