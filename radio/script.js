@@ -8,10 +8,6 @@ const stations = [
     url: "https://streamingcwsradio30.com:7080/stream/1/"
   },
   {
-    name: "Gallito XHSJ SLW",
-    url: "https://radio.rcg.com.mx:7001/stream/1/"
-  },
-  {
     name: "XEBX Sabinas",
     url: "https://streamingcwsradio30.com:7112/;"
   },
