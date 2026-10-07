@@ -48,8 +48,8 @@ const stations = [
     url: "https://cdn.instream.audio/:9660/stream"
   },
   {
-    name: "Metro 95.1 ARG",
-    url: "https://24483.live.streamtheworld.com/METROAAC.aac"
+    name: "Radio Casteddu Italia",
+    url: "https://free.rcast.net/66356"
   },
   {
     name: "Rinse FM",
