@@ -32,8 +32,8 @@ const stations = [
     url: "https://hemnos.cdnstream.com/1113_96"
   },
   {
-    name: "Fuego 101.9",
-    url: "https://17843.live.streamtheworld.com/KHHMFMAAC.aac"
+    name: ".113 FM Latin Hits",
+    url: "https://free.rcast.net/1008847"
   },
   {
     name: "Noize Nación",
