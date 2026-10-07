@@ -67,60 +67,45 @@ Esposo de la Dra. <a href="https://www.instagram.com/nanys92/" target="_blank">N
 	</div>
 
 	<script>
-	const tracks = ['audio/track1.mp3', 'audio/track2.mp3', 'audio/track3.mp3'];
-	const audio = document.getElementById('bg-audio');
-	const hint = document.getElementById('play-hint');
-	const isMobile = navigator.maxTouchPoints > 0;
+		const tracks = ['audio/track1.mp3', 'audio/track2.mp3', 'audio/track3.mp3'];
+		let current = 0;
+		const audio = document.getElementById('bg-audio');
+		const hint = document.getElementById('play-hint');
+		const isMobile = navigator.maxTouchPoints > 0;
 
-	const hintLabel = hint.querySelector('span');
+		const hintLabel = hint.querySelector('span');
 
-	let queue = shuffle([...tracks]);
-	let index = 0;
-
-	function shuffle(arr) {
-		for (let i = arr.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[arr[i], arr[j]] = [arr[j], arr[i]];
+		function dismissHint() {
+			hint.classList.add('fade-out');
+			setTimeout(() => hint.remove(), 600);
 		}
-		return arr;
-	}
 
-	function nextTrack() {
-		index++;
-		if (index >= queue.length) {
-			queue = shuffle([...tracks]);
-			index = 0;
-		}
-		audio.src = queue[index];
-		audio.play();
-	}
-
-	function dismissHint() {
-		hint.classList.add('fade-out');
-		setTimeout(() => hint.remove(), 600);
-	}
-
-	audio.addEventListener('ended', nextTrack);
-
-	if (isMobile) {
-		hintLabel.textContent = 'Toca para escuchar';
-		hint.classList.add('visible');
-		document.addEventListener('click', () => {
-			audio.src = queue[index];
+		audio.addEventListener('ended', () => {
+			current = (current + 1) % tracks.length;
+			audio.src = tracks[current];
 			audio.play();
-			dismissHint();
-		}, { once: true });
-	} else {
-		audio.src = queue[index];
-		audio.play().catch(() => {
-			hintLabel.textContent = 'Clic para escuchar';
+		});
+
+		if (isMobile) {
+			hintLabel.textContent = 'Toca para escuchar';
 			hint.classList.add('visible');
 			document.addEventListener('click', () => {
+				audio.src = tracks[current];
 				audio.play();
 				dismissHint();
 			}, { once: true });
-		});
-	}
-</script>
+		} else {
+			audio.src = tracks[current];
+			audio.play().catch(() => {
+				// Autoplay bloqueado en desktop — mostrar hint y esperar clic
+				hintLabel.textContent = 'Clic para escuchar';
+				hint.classList.add('visible');
+				document.addEventListener('click', () => {
+					audio.play();
+					dismissHint();
+				}, { once: true });
+			});
+		}
+	</script>
 </body>
 </html>
